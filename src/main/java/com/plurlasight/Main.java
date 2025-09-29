@@ -5,8 +5,25 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please enter your first name ");
+        System.out.println("Please enter your first name ");  // first name
         String firstName = scanner.nextLine().trim();
+
+        System.out.println("Please enter your last name ");  // last name
+        String lastName = scanner.nextLine().trim();
+
+        System.out.println("Suffix (e.g., Jr, Sr, PhD,):  ");  // suffix
+        String suffix = scanner.nextLine().trim();
+
+        String fullName;       // Fullname
+        if (!suffix.isEmpty()) {fullName = firstName + " " + lastName + " ;  " + suffix;}
+        else {fullName = firstName + " " + lastName;}
+
+
+
+
+
+
+
 
 
 
