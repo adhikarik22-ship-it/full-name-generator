@@ -8,21 +8,22 @@ public class Main {
         System.out.println("Please enter your first name ");  // first name
         String firstName = scanner.nextLine();
 
+        System.out.println("Please enter your middle name ");  // middle name
+        String middleName = scanner.nextLine();
+
         System.out.println("Please enter your last name ");  // last name
         String lastName = scanner.nextLine();
 
-        System.out.println("Suffix (e.g., Jr, Sr, PhD,):  ");  // suffix
+        System.out.println("Suffix (e.g., Jr, Sr, PhD,): ");  // suffix
         String suffix = scanner.nextLine();
 
         String fullName;       // Fullname
-        if (!suffix.isEmpty()) {fullName = firstName + " " + lastName + " ;  " + suffix;}
-        else {fullName = firstName + " " + lastName;}
+        if (!suffix.isEmpty()) {fullName = firstName + " " + middleName+ " " + " , " + suffix;}
+        else {fullName = firstName + " " + middleName + " " + lastName;}
 
         // print full name
 
         System.out.println("Full name: " + fullName);
-
-
 
     }
 }
