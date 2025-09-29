@@ -18,16 +18,9 @@ public class Main {
         if (!suffix.isEmpty()) {fullName = firstName + " " + lastName + " ;  " + suffix;}
         else {fullName = firstName + " " + lastName;}
 
+        // print full name
 
-
-
-
-
-
-
-
-
-
+        System.out.println("Full name: " + fullName);
 
 
 
